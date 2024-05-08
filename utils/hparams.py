@@ -26,7 +26,7 @@ class HParams(object):
     @classmethod
     def load(cls, path):
         with open(path, 'r') as f:
-            return cls(**yaml.load(f))
+            return cls(**yaml.safe_load(f))
 
 
 if __name__ == '__main__':
