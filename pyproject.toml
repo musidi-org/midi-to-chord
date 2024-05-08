@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "midi-to-chord"
+version = "0.1.0"
+description = "Convert midi files to chords at time stamp"
+authors = ["Meng Lin <menglinmaker@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "^2.3.0"
+numpy = "^1.26.4"
+pandas = "^2.2.2"
+pyrubberband = "^0.3.0"
+librosa = "^0.10.2"
+pyyaml = "^6.0.1"
+mir-eval = "^0.7"
+pretty-midi = "^0.2.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
